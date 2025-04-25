@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Allpication</title>
+    <!-- bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div style="width: 100%; height: 100vh;">
+        <header style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mn1hw4I8gm5txOo0izd7jCcrGUZFnGeaLA&s'); height:600px; background-repeat: no-repeat; background-size: cover;">
+            <nav class="navbar bg-transparent">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a href="" style="padding: 30px; color: white;"><i class="fa-solid fa-house fa-2x"></i></a>
+                  <h1 style="color: white; font-size: 40px; text-align: left;">Register Page</h1>
+                </div>
+              </nav>
+        </header>
+        
+
+        <div class="p-4">
+            <h2>Welcome to our <span class="text-primary">Website</span></h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam non rerum est quas aliquid omnis dolorem harum ipsam aspernatur impedit odio officia similique asperiores pariatur, perspiciatis itaque corrupti sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, natus. Ipsa incidunt, quae officia voluptas qui earum aspernatur animi velit facilis id sunt facere officiis quidem, consequatur, eaque suscipit asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, soluta. Velit nisi voluptatem eum voluptatibus. Quibusdam aliquam earum illo quidem saepe adipisci, quos, minima nihil, debitis ut deleniti perspiciatis quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quam ex. Odit quae, et illum modi aliquid tempore totam magnam sapiente nisi voluptatem eligendi autem in cupiditate nostrum animi quasi.</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 p-3">
+                    <img src="https://png.pngtree.com/png-vector/20200429/ourmid/pngtree-web-development-concept-flat-design-png-image_2197063.jpg" alt="no image" class="w-100">
+                </div>
+                <div class="col-md-5 p-md-5 p-3 mt-md-5">
+                    <form class="p-5 shadow rounded border border-primary border-1" style="background-image: linear-gradient(to right, rgb(201,199,199), rgb(56, 113, 236));">
+                        <h4 style="text-align: center; padding-bottom: 10px; font-size: 30px; color: black; font-weight: 700;">Register</h4>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">User Name</label>
+                          <input type="text" class="form-control" aria-describedby="emailHelp" id="reguser">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control"  id="regpass">
+                        </div>
+                        
+                        <button  class="btn btn-primary w-100" onclick="obj.register()" type="button">Register</button>
+                        <p class="p-2">Are you Already an  User ? <a href="./login.html" style="color: rgb(44, 10, 237); font-size: 20px;"> Login</a></p>
+                      </form>
+                    
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="./logic.js"></script>
+</html>

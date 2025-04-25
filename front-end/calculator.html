@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calstyle.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="calculator">
+
+            <form action="">
+                <!-- display tab -->
+                <div id="display">
+                    <input type="text" name="display" readonly id="result">
+                </div>
+                <!-- first row -->
+
+                <div>
+                    <input type="button" value="AC" class="color_g" onclick="clearAll()">
+                    <input type="button" value="⨴" class="color_g" onclick="back()">
+                    <input type="button" value="•" class="color_g" onclick="displayr('.')">
+                    <input type="button" value="∕" class="color_g" onclick="displayr('/')">
+                </div>
+                <!-- second row -->
+                <div>
+                    <input type="button" value="7" onclick="displayr(7)">
+                    <input type="button" value="8" onclick="displayr(8)">
+                    <input type="button" value="9" onclick="displayr(9)">
+                    <input type="button" value="×" class="color_g" onclick="displayr('*')">
+                </div>
+                <!-- third row -->
+                <div>
+                    <input type="button" value="4" onclick="displayr(4)">
+                    <input type="button" value="5" onclick="displayr(5)">
+                    <input type="button" value="6" onclick="displayr(6)">
+                    <input type="button" value="–" class="color_g" onclick="displayr('-')">
+                </div>
+                <!-- fourth row -->
+                <div>
+                    <input type="button" value="1" onclick="displayr(1)">
+                    <input type="button" value="2" onclick="displayr(2)">
+                    <input type="button" value="3" onclick="displayr(3)">
+                    <input type="button" value="+" class="color_g" onclick="displayr('+')">
+                </div>
+                <!-- fifth row -->
+                <div>
+                    <input type="button" value="0" onclick="displayr(0)">
+                    <input type="button" value="=" class="equal" onclick="equals()">
+                    
+                </div>
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./calculator.js"></script>
+</html>
