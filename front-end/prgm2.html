@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom access</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1 class="class1">DOM2</h1>
+    <p class="class1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore error id distinctio nulla dolorum ea laboriosam voluptate nam sequi nihil, odio quibusdam perspiciatis ipsa atque quod possimus dolore blanditiis officiis! </p>
+    <button onclick="change()">click me</button>
+</body>
+<script>
+    //js
+    //getElementsByTagName
+
+    const content = document.getElementsByTagName('h1') // eeth tagne aanoo access cheyyandath athanu kodkkandath appo bodyil aa tagname vechittulla ella elementum oru object ayitt return cheyyum
+    console.log(content[1]);
+    content[0].innerHTML = 'hello DOM'
+
+
+    function change(){
+        content[0].innerHTML = 'hello DOM2'
+        console.log(content[0]);
+
+        
+           
+    }
+    
+
+</script>
+</html>
